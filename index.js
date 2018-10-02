@@ -1,7 +1,7 @@
 const debug = require('debug')('Logx:updAppender')
 module.exports = {
     configure(config){
-        const sock = dgram.createSocket('udp4');
+        const sock = require('dgram').createSocket('udp4');
         const host = config.host || '127.0.0.1';
         const port = config.port || 18777;
         debug('create',host,port)
