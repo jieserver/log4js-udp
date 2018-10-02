@@ -1,4 +1,23 @@
 # log4js-udp
-emit log4js event by udp
+Emit log4js event by udp.The same time,a JieServer/Logx service is running at the remote addres.
 # usage
-
+npm install https://github.com/jieserver/log4js-udp.git
+```
+log4js.configure({
+    "appenders": {
+      "upd": {
+        "type": "log4js-udp",
+        "host": "127.0.0.1",//remote addres
+        "port": 18777
+      }
+    },
+    "categories": {
+      "default": {
+        "appenders": [
+          "upd"
+        ],
+        "level": "all"
+      }
+    }
+  })
+  ```
