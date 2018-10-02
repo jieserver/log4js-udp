@@ -1,6 +1,6 @@
 {
   "name": "log4js-udp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Appender of log4js to send event by udp",
   "main": "index.js",
   "repository": "https://github.com/jieserver/log4js-udp.git",
